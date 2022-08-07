@@ -1,5 +1,5 @@
 import React ,{ Fragment, useState } from "react"
-import { Button } from "reactstrap"
+import { Button, Input } from "reactstrap"
 import classes from './Header.module.css';
 import {
     Collapse,
@@ -9,6 +9,9 @@ import {
     Nav,
     NavItem,
     NavLink,
+    Form,
+    Col,
+    FormGroup,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -26,14 +29,24 @@ import {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+            <Form inline>
+                <FormGroup row className="mb-2 mr-2  mb-sm-0">
+                    <Col lg={10} className="p-0" >
+                        <Input type="search" name="Search" id="searcgField"
+                            placeholder="Enter Text Here... " className={classes.input1} />
+                    </Col>
+                    <Col lg={2} className="p-0">
+                       <Button><i className="fa fa-search" aria-hidden="true"></i></Button>
+                    </Col>
+                </FormGroup>
+              </Form>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Categories
                 </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
