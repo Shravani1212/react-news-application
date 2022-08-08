@@ -5,16 +5,13 @@ import './App.css';
 import Header from './Components/header/Header';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
+import NewsManager from './Components/NewsManager';
 
 class App extends React.Component{
   render(){
 
     return <div className = 'main-content' >
-   <Header />
-   <div className="container my-3">
-     <h2>Latest News</h2>
-      <Dashboad />
-   </div>
+      <NewsManager />
     </div>
    
   }
