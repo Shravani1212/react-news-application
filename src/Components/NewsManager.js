@@ -12,6 +12,9 @@ const NewsManager=props=>{
     else if(newsType.id===2){
         heading='SearchResult: ';
     }
+    else if(newsType.id===3){
+        heading='Category: '
+    }
     // useEffect(()=>{
     //     console.log('inside topline useEffect');
     //     fetch('https://newsapi.org/v2/top-headlines?country=in&apikey=8a760bc53a8f4fbd888b82b5333142ff&page=1')
@@ -27,27 +30,30 @@ const NewsManager=props=>{
          if(newsType.id===1){
              url=`https://newsapi.org/v2/top-headlines?country=in&apikey=8a760bc53a8f4fbd888b82b5333142ff&page=1`;
          }
-         else if(newsType.id==2){
+         else if(newsType.id===2){
              url=`https://newsapi.org/v2/everything?q=${newsType.result}&apiKey=8a760bc53a8f4fbd888b82b5333142ff&language=en&page=1`;
          }
-         else if(newsType.id==3){
-             url=  `
-             https://newsapi.org/v2/top-headlines?country=in&category=technology&apikey=8a760bc53a8f4fbd888b82b5333142ff`;
+         else if(newsType.id===3){
+             url=  `https://newsapi.org/v2/top-headlines?country=in&category=${newsType.result}&apikey=8a760bc53a8f4fbd888b82b5333142ff`;
          }
          fetch(url)
          .then((response) => response.json())
          .then((data) => setNews(data.articles))
          .then(()=>console.log(news))
          .catch((err) => console.log(err))  
-    },[newsType.id]);
+    },[newsType.id,newsType.result]);
     const searchUpdate=(res)=>{
         setNewsType({id:2,result:res});
     }
     const TopHeadlineupdate=()=>{
         setNewsType({id:1,result:''});
     }
+    const CategoryUpdate=(res)=>{
+        console.log('inside category ',res);
+        setNewsType({id:3,result:res});
+    }
     return <Fragment>
-    <Header  searchUpdateHandler={searchUpdate}  topHeadLineHandler={TopHeadlineupdate} />
+    <Header  searchUpdateHandler={searchUpdate}  topHeadLineHandler={TopHeadlineupdate} categoryHandler={CategoryUpdate} />
    <div className="container my-3">
      <h2>{`${heading}${newsType.id!=1?newsType.result:``}`}</h2>
         <Dashboad news={news} />

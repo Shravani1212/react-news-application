@@ -30,6 +30,11 @@ import {
         searchTextRef.current.value='';
 
     }
+    const clickHandler=(e)=>{
+      e.preventDefault();
+      console.log(e.target.value);
+      props.categoryHandler(e.target.value);
+    }
     return <Fragment>
         <Navbar color="dark" dark expand="md"  >
         <NavbarBrand href="/">News</NavbarBrand>
@@ -52,15 +57,24 @@ import {
             <NavItem>
             <NavLink onClick={props.topHeadLineHandler} className={classes['navlink-1']} >Top-Headlines</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar >
+            <UncontrolledDropdown nav inNavbar  >
               <DropdownToggle nav caret>
                 Categories
                 </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
+              <DropdownMenu right >
+                <DropdownItem onClick={clickHandler} value="business">
                   Business
                   </DropdownItem>
-                <DropdownItem>
+                  <DropdownItem onClick={clickHandler} value="entertainment">
+                  Entertainment
+                  </DropdownItem>
+                  <DropdownItem onClick={clickHandler} value="general">
+                  General
+                  </DropdownItem>
+                  <DropdownItem onClick={clickHandler} value="health">
+                  Health
+                  </DropdownItem>
+                <DropdownItem onClick={clickHandler} value="sports">
                   Sports
                   </DropdownItem>
               </DropdownMenu>
