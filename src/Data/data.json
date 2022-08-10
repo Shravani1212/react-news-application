@@ -1,0 +1,16 @@
+{
+  "news": [
+    {
+      "title": "Dangerous Asteroids, Comets that threaten Earth can be exploited - HT Tech",
+      "imageSrc": "https://images.hindustantimes.com/tech/img/2022/08/09/1600x900/asteroid-3628185_1920_1631933514992_1660051819034_1660051819034.jpg",
+      "author": "HT Tech",
+      "id": 1
+    },
+    {
+      "title": "Another Earth? Check what NASA just found some 37 mn light years away - HT Tech",
+      "imageSrc": "https://images.hindustantimes.com/tech/img/2022/08/09/1600x900/_34637b50-4345-11ea-bfa0-35d85fc987f6_1660049945823_1660049945823.jpg",
+      "author": "Shaurya Tomer",
+      "id": 2
+    }
+  ]
+}
