@@ -58,7 +58,7 @@ import {
             <NavLink onClick={props.topHeadLineHandler} className={classes['navlink-1']} >Top-Headlines</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink  className={classes['navlink-1']} >Read List</NavLink>
+            <NavLink onClick={props.readListHandler} className={classes['navlink-1']} >Read List</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar  >
               <DropdownToggle nav caret>

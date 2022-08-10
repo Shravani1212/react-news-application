@@ -16,7 +16,7 @@ const CardD=props=>{
                 method: "POST",
                 body: JSON.stringify({
                   title: props.Title,
-                  imageSrc: props.Imgurl,
+                  urlToImage: props.Imgurl,
                   author: props.Author 
                 }),
                 headers: {

@@ -2,15 +2,27 @@
   "news": [
     {
       "title": "Dangerous Asteroids, Comets that threaten Earth can be exploited - HT Tech",
-      "imageSrc": "https://images.hindustantimes.com/tech/img/2022/08/09/1600x900/asteroid-3628185_1920_1631933514992_1660051819034_1660051819034.jpg",
+      "urlToImage": "https://images.hindustantimes.com/tech/img/2022/08/09/1600x900/asteroid-3628185_1920_1631933514992_1660051819034_1660051819034.jpg",
       "author": "HT Tech",
       "id": 1
     },
     {
       "title": "Another Earth? Check what NASA just found some 37 mn light years away - HT Tech",
-      "imageSrc": "https://images.hindustantimes.com/tech/img/2022/08/09/1600x900/_34637b50-4345-11ea-bfa0-35d85fc987f6_1660049945823_1660049945823.jpg",
+      "urlToImage": "https://images.hindustantimes.com/tech/img/2022/08/09/1600x900/_34637b50-4345-11ea-bfa0-35d85fc987f6_1660049945823_1660049945823.jpg",
       "author": "Shaurya Tomer",
       "id": 2
+    },
+    {
+      "title": "Urvashi Rautela says Egyptian singer with 2 wives and 4 kids had proposed to her - Hindustan Times",
+      "urlToImage": "https://images.hindustantimes.com/img/2022/08/09/1600x900/Urvashi_Rautela_says_an_Egyptian_singer_proposed_1660046390805_1660046401905_1660046401905.jpg",
+      "author": "HT Entertainment Desk",
+      "id": 3
+    },
+    {
+      "title": "Umpire Rudi Koertzen Dies. Virender Sehwag Says \"Had A Great Relation With Him\" - NDTV Sports",
+      "urlToImage": "https://c.ndtvimg.com/2022-08/cbcc5m8o_sehwag-rudi-twitter-_625x300_09_August_22.jpg",
+      "author": "NDTV Sports Desk",
+      "id": 4
     }
   ]
 }
