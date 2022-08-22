@@ -15,7 +15,7 @@ const Dashboad=props=>{
    
     return <Fragment>
         {props.news.map((newItem,index) => {
-          return  <CardD key={index} Imgurl={newItem.urlToImage} Title={newItem.title} Author={newItem.author} />;
+          return  <CardD isdisplay={props.isReadList} key={index} Imgurl={newItem.urlToImage} Title={newItem.title} Author={newItem.author} />;
         })}
     </Fragment>
 }

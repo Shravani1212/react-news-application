@@ -6,17 +6,22 @@ const NewsManager=props=>{
     const [news,setNews]=useState([]);
     const [newsType,setNewsType]=useState({id:1,result:''});
     let heading='';
+    let isReadList=false;
     if(newsType.id===1){
         heading='Top-Headlines';
+        isReadList=false;
     }
     else if(newsType.id===2){
         heading='SearchResult: ';
+        isReadList=false;
     }
     else if(newsType.id===3){
-        heading='Category: '
+        heading='Category: ';
+        isReadList=false;
     }
     else if(newsType.id===4){
         heading='Read List';
+        isReadList=true;
     }
     // useEffect(()=>{
     //     console.log('inside topline useEffect');
@@ -40,7 +45,7 @@ const NewsManager=props=>{
              url=  `https://newsapi.org/v2/top-headlines?country=in&category=${newsType.result}&apikey=8a760bc53a8f4fbd888b82b5333142ff`;
          }
          else if(newsType.id===4){
-             url=`http://localhost:3003/news`;
+             url=`http://localhost:3004/news`;
          }
          fetch(url)
          .then((response) => response.json())
@@ -65,7 +70,7 @@ const NewsManager=props=>{
     <Header  searchUpdateHandler={searchUpdate}  readListHandler={ReadListUpdate}  topHeadLineHandler={TopHeadlineupdate} categoryHandler={CategoryUpdate} />
    <div className="container my-3">
      <h2>{`${heading}${(newsType.id!=1 && newsType.id!=4)?newsType.result:``}`}</h2>
-        <Dashboad news={news} />
+        <Dashboad news={news} isReadList={isReadList} />
    </div>
     </Fragment>
 }

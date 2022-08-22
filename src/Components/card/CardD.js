@@ -12,7 +12,7 @@ const CardD=props=>{
         console.log("outside read json started");
         if(btnClick){
             console.log("inside read json started");
-            fetch('http://localhost:3003/news',{
+            fetch('http://localhost:3004/news',{
                 method: "POST",
                 body: JSON.stringify({
                   title: props.Title,
@@ -41,7 +41,7 @@ const CardD=props=>{
         <CardBody>
             <CardTitle tag="h5">{props.Title}</CardTitle>
             <CardText>{`- ${props.Author===null?'NA':props.Author}`}</CardText>
-           {btnClick ? <Button className="btn-danger" disabled >Added To Read Later</Button>:<Button onClick={clickHandler} >Read Later</Button>} 
+           { props.isdisplay?``: (btnClick ? <Button className="btn-danger" disabled >Added To Read Later</Button>:<Button onClick={clickHandler} >Read Later</Button>)} 
         </CardBody>
     </Card>
     );
