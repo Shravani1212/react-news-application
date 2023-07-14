@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "news": [
+    {
+      "title": "Evidence of potential life on Venus found! - Economic Times",
+      "urlToImage": "https://img.etimg.com/thumb/msid-101691557,width-1070,height-580,imgsize-670,overlay-economictimes/photo.jpg",
+      "author": "ET Online",
+      "id": 1
+    },
+    {
+      "title": "Stock Market LIVE Updates: Nifty, Sensex trade flat; HDFC twins, RIL most active - Moneycontrol",
+      "urlToImage": "https://images.moneycontrol.com/static-mcnews/2023/07/market_volatile1-2-770x433.jpg",
+      "author": "Rakesh Patil",
+      "id": 2
+    },
+    {
+      "title": "Mexican Family Killed In Chopper Crash Visited India Before Touring Nepal - NDTV",
+      "urlToImage": "https://c.ndtvimg.com/2023-07/qrsjr5tg_helicopter-crash-manang-air-crash_625x300_11_July_23.jpg",
+      "author": null,
+      "id": 3
+    },
+    {
+      "title": "Damage to gut bacteria linked with chemo-induced weight gain in breast cancer patients: Study - ETHealthWorld",
+      "urlToImage": "https://etimg.etb2bimg.com/thumb/msid-101692526,imgsize-16324,width-1200,height=765,overlay-ethealth/industry/damage-to-gut-bacteria-linked-with-chemo-induced-weight-gain-in-breast-cancer-patients-study.jpg",
+      "author": "ET HealthWorld",
+      "id": 4
+    },
+    {
+      "title": "Rocky Aur Rani Kii Prem Kahaani Song What Jhumka: Alia-Ranveer Drop The Party Anthem Of The Year - NDTV Movies",
+      "urlToImage": "https://cdn.ndtv.com/common/images/ogndtv.png",
+      "author": null,
+      "id": 5
+    },
+    {
+      "title": "James Webb Space Telescope anniversary: Stunning new image celebrates first year of mission - The Indian Express",
+      "urlToImage": null,
+      "author": "The Indian Express",
+      "id": 6
+    },
+    {
+      "title": "James Webb Space Telescope anniversary: Stunning new image celebrates first year of mission - The Indian Express",
+      "urlToImage": null,
+      "author": "The Indian Express",
+      "id": 7
+    },
+    {
+      "title": "James Webb Space Telescope anniversary: Stunning new image celebrates first year of mission - The Indian Express",
+      "urlToImage": null,
+      "author": "The Indian Express",
+      "id": 8
+    }
+  ]
+}

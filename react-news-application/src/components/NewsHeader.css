@@ -1,0 +1,84 @@
+/* Header.module.css */
+
+.header-1 {
+    margin-bottom: 10px;
+  }
+  
+  .input1 {
+    width: 100% !important;
+    height: 38px;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+  
+  .navlink-1 {
+    cursor: pointer;
+  }
+  
+  .header {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .header .navbar {
+    background-color: #221509; /* Orange */
+    padding: 10px;
+  }
+  
+  .header .navbar-brand {
+    color: #000000;
+    font-size: 24px;
+  }
+  
+  .header .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .header .navbar-toggler:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .header .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .header .nav-link {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .header .nav-link:hover {
+    color: #fff;
+  }
+  
+  .header .form-inline .form-control {
+    width: 300px;
+  }
+  
+  .header .form-inline .btn {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .header .form-inline .form-control {
+      width: 100%;
+    }
+  }
+  /* NewsHeader.css */
+
+.input1 {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.nav-link {
+  cursor: pointer;
+}

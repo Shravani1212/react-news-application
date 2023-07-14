@@ -17,12 +17,36 @@ import { DataFetching } from './components/DataFetching';
 import { ComponentA } from './components/ComponentA';
 import { ComponentB } from './components/ComponentB';
 import { ComponentC } from './components/ComponentC';
-import React from 'react';
+import React, { useReducer } from 'react';
 import { Counter1 } from './components/Counter1';
+import { CounterTwo } from './components/CounterTwo';
+import { CounterThree } from './components/CounterThree';
+import { DataFetchingOne } from './components/DataFetchingOne';
+import { DataFetchingTwo } from './components/DataFetchingTwo';
 export const UserContext =React.createContext()
 export const CompanyContext =React.createContext()
+export const CountContext=React.createContext()
+const initialState=0;
+const reducer=(state,action)=>{
+  switch(action){
+    case 'increment' :
+        return state+1
+        break
+        case 'decrement' :
+            
+            return {state:state-1}
+            break
+            case 'reset' :
+                return initialState
+                break
+            default:
+                return state
+}
+}
 function App() {
+  const [count,dispatch]=useReducer(reducer,initialState)
   return (
+    // <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
     <div className="App">
       {/* <ClassCounter/> */}
       {/* <HookCounter/> */}
@@ -43,9 +67,17 @@ function App() {
         <ComponentC/>
         </CompanyContext>
         </UserContext.Provider> */}
-        <Counter1/>
-      
+        {/* <Counter1/> */}
+        {/* <CounterTwo/> */}
+        {/* <CounterThree/> */}
+        {/* Count --{count}
+        <ComponentA/>
+        <ComponentB/>
+        <ComponentC/> */}
+      {/* <DataFetchingOne/> */}
+      <DataFetchingTwo/>
     </div>
+    
   );
 }
 
